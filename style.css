@@ -77,6 +77,14 @@ body {
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: solid black 1px;
+    cursor: pointer;
+}
+.categorie p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #A236E2 1px;
 }
 
 .sale-image img {
@@ -158,6 +166,20 @@ body {
     height: 100px;
     width: 400px;
     border: solid black 2px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .my-learning:hover .my-learning__popup{
     display: block;
